@@ -17,3 +17,21 @@ Ferramentas (Software):
  
  ESP Easy firmware:
  - Firmware image R120
+ 
+ Flashing the module Windows "cmd" console:
+
+Step 1 - Find the right flash size of your module
+Step 2 - Download the zipfile here: Firmware and unpack to a folder of choice.
+Step 3 - Double Click "flash.cmd". A command windows should start with three questions.
+Step 4 - Select the com port that your module or FTDI module is using
+Step 5 - Select the flash size, 512, 1024 or 4096
+Step 6 - Select the build version like 120 or newer.
+
+Ou correr o commando:
+
+esptool.exe -vv -cd nodemcu -cb 115200 -cp COM%comport% -ca 0x00000 -cf ESPEasy_R%build%_%fsize%.bin
+
+Substituir %...% por:
+COM%comport% - numero porta com do FTDI;
+ESPEasy_R%build% - RElease built version like 120 or newer; 
+%fsize% -flash size (512, 1024 or 4096);
