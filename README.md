@@ -9,7 +9,7 @@ ESP Easy also offers limited "low level" actuator functions but due to system in
 The ESP Easy supports several Home Automation controllers or web-services that collect sensor data.
 
 Ferramentas (Software):
- - kicad http://kicad-pcb.org/
+ - kicad http://kicad.org/
  - ESP Easy http://www.letscontrolit.com/wiki/index.php/ESPEasy#Loading_firmware
  
  Ferramentas (Hardware):
